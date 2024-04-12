@@ -1,22 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Seymour+One&display=swap");
 
-/* Reset default margin and padding */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
 }
+#submit {
+  background-color: #3d64ac;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s, color 0.3s;
+  /* Add transition for smooth hover effect */
+}
+
+#submit:hover {
+  background-color: #2c477a;
+  /* Change background color on hover */
+}
+  
 header {
   text-align: center;
 }
-.teensopx{
-    height: 300px;
+
+.teensopx {
+  height: 300px;
 }
+
 button {
   background-color: white;
   border: none;
-  color: black; /* Set default text color to black */
+  color: black;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -29,7 +45,17 @@ button {
   align-items: center;
   justify-content: center;
   margin: 0 10px;
-  transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#infographic {
+  flex-basis: 45%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 button img {
@@ -39,14 +65,13 @@ button img {
 
 button:hover {
   background-color: #e8e8c6;
-  color: white; /* Change text color on hover */
+  color: white;
 }
 
 .black {
   color: black;
 }
 
-/* Container to center content */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -58,15 +83,16 @@ button:hover {
   font-weight: bold;
   font-size: 2.7em;
 }
+
 .container h2 {
   font-family: "Inconsolata", monospace;
   font-weight: normal;
   font-size: 1em;
 }
-/* Styles for header */
+
 header {
   text-align: center;
-  padding: 100px 0; /* Increase padding for larger header */
+  padding: 100px 0;
   background-color: #3d64ac;
   color: #fff;
 }
@@ -80,11 +106,10 @@ header {
 
 header h1,
 header h2 {
-  margin: 10px 0; /* Increase margin for header text */
-  font-size: 36px; /* Increase font size for header text */
+  margin: 10px 0;
+  font-size: 36px;
 }
 
-/* Styles for navigation */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -104,7 +129,6 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* Main section styles */
 main {
   padding: 20px 0;
 }
@@ -125,17 +149,18 @@ section p {
   margin-bottom: 5px;
 }
 
-/* Form styles */
 form {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
 form label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 form input[type="text"],
@@ -144,10 +169,14 @@ form input[type="number"],
 form textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+form textarea {
+  height: 120px;
 }
 
 form input[type="submit"] {
@@ -164,9 +193,45 @@ form input[type="submit"]:hover {
   color: #333;
 }
 
-.edu_h2{
-    color: black;
+
+form input[type="submit"]:hover {
+  background-color: #ffc107;
+  color: #333;
 }
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+form label[for="message"] {
+    display: block;
+  }
+  
+label input[type="radio"] {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.edu_h2 {
+  color: black;
+}
+
 .Education_cont {
   width: 80%;
   margin: auto;
@@ -189,6 +254,7 @@ form input[type="submit"]:hover {
   margin-top: 3rem;
   height: 30vh;
 }
+
 .edu_name {
   color: black;
   font-weight: bold;
@@ -200,15 +266,17 @@ form input[type="submit"]:hover {
   background-color: #3d64ac;
   border-radius: 5px;
 }
+
 .edu_name h1 {
   color: black;
 }
+
 .edu-name p {
   font-size: medium;
 }
 
 .edu_desc {
-    height: 248px;
+  height: 248px;
   color: rgb(205, 200, 200);
   margin-left: 1rem;
   padding: 28px;
@@ -219,65 +287,93 @@ form input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
 }
+
 .edu_desc p {
   font-size: 15px;
 }
 
-/* Responsive styles */
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-  /* Adjust header padding */
-  header {
-    padding: 50px 0;
+main {
+  padding: 20px 0;
+}
+
+#about-me {
+  text-align: center;
+  font-family: "Seymour One", sans-serif;
+}
+
+.sections-container {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.honesty {
+  font-family: "Inconsolata", monospace;
+  flex-basis: 45%;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact {
+  padding: 40px 0;
+  background-color: #f5f5f5;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sections-container {
+    flex-direction: row;
   }
 
-  /* Decrease profile picture size */
+  .honesty,
+  #infographic {
+    flex-basis: 45%;
+  }
+
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sections-container {
+    flex-direction: column;
+  }
+
+  .honesty,
+  #infographic {
+    flex-basis: 100%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
   .pfp {
     width: 150px;
     height: 150px;
   }
 
-  /* Decrease font sizes for header */
   header h1,
   header h2 {
     font-size: 24px;
   }
 
-  /* Decrease font size for navigation */
-  nav ul li a {
-    font-size: 14px;
-  }
-
-  /* Adjust margin between navigation items */
   nav ul li {
-    margin-right: 5px;
+    margin-top: 20px;
   }
 
-  /* Decrease font size for section headings */
-  section h2 {
-    font-size: 20px;
-  }
-
-  /* Decrease font size for section paragraphs */
-  section p {
-    font-size: 14px;
-  }
-
-  /* Adjust padding for form */
-  form {
-    padding: 10px;
-  }
-
-  /* Adjust padding for form inputs */
-  form input[type="text"],
-  form input[type="email"],
-  form input[type="number"],
-  form textarea {
-    padding: 8px;
-  }
-
-  /* Adjust padding for form submit button */
-  form input[type="submit"] {
-    padding: 8px 16px;
+  button {
+    padding: 10px 15px;
   }
 }
