@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Final</title>
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="container">
+            <img src="./assets/pfp.jpeg" alt="Profile Picture">
+            <h1>Krish Patel</h1>
+            <h2>Web Developer</h2>
+            <nav>
+                <ul>
+                    <button>
+                        <li><a href="resume.pdf" download>Resume</a></li>
+                    </button>
+                    <button>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="honesty">
+            I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+            No part of this assessment has been copied manually or electronically from any other source
+            (including web sites) except for the information supplied by the WEB222 instructors and / or
+            made available in this assessment for my use. I also declare that no part of this assignment has
+            been distributed to other students.
+        </section>
+        <section id="infographic">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Age: 20</p>
+                <p>Email: kspatel46@myseneca.ca</p>
+                <p>Language: English, Hindi, Gujarati, Spanish</p>
+                <p>Class Section: ZCC</p>
+                <p>Student ID: 106198237</p>
+                <p>Professor: Mark Meritt </p>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+                <p>Bachelor of Computer Science - Seneca College</p>
+                <p>Graduation Date: May 2023</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form action="https://httpbin.org/post" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" list="cities" required>
+                    <datalist id="cities">
+                        <option value="Toronto">
+                        <option value="Vancouver">
+                            <!-- Add more Canadian cities as needed -->
+                    </datalist>
+
+                    <label for="postal_code">Postal Code:</label>
+                    <input type="text" id="postal_code" name="postal_code" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d">
+
+                    <label>Reason for Contact:</label>
+                    <input type="radio" id="question" name="reason" value="Question" checked>
+                    <label for="question">Question</label>
+                    <input type="radio" id="comment" name="reason" value="Comment">
+                    <label for="comment">Comment</label>
+                    <input type="radio" id="hiring" name="reason" value="Hiring">
+                    <label for="hiring">Hiring</label>
+                    <div id="hourly_rate" style="display: none;">
+                        <label for="rate">Hourly Rate:</label>
+                        <input type="number" id="rate" name="rate">
+                    </div>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <label for="additional_info">Additional Information:</label>
+                    <input type="text" id="additional_info" name="additional_info">
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
