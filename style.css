@@ -1,52 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&display=swap");
+
+/* Reset default margin and padding */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
-
-.container {
-    width: 95%;
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
 header {
-    text-align: center;
-    padding: 20px 0;
+  text-align: center;
+}
+.teensopx{
+    height: 300px;
+}
+button {
+  background-color: white;
+  border: none;
+  color: black; /* Set default text color to black */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 25px;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
 }
 
-header img {
-    width: 150px;
-    border-radius: 5%;
+button img {
+  width: 20px;
+  margin-right: 5px;
 }
 
-header h1, header h2 {
-    margin: 5px 0;
+button:hover {
+  background-color: #e8e8c6;
+  color: white; /* Change text color on hover */
 }
 
+.black {
+  color: black;
+}
+
+/* Container to center content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 2.7em;
+}
+.container h2 {
+  font-family: "Inconsolata", monospace;
+  font-weight: normal;
+  font-size: 1em;
+}
+/* Styles for header */
+header {
+  text-align: center;
+  padding: 100px 0; /* Increase padding for larger header */
+  background-color: #3d64ac;
+  color: #fff;
+}
+
+.pfp {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+header h1,
+header h2 {
+  margin: 10px 0; /* Increase margin for header text */
+  font-size: 36px; /* Increase font size for header text */
+}
+
+/* Styles for navigation */
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline-block;
+  margin-top: 40px;
+  margin-right: -4px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
+/* Main section styles */
 main {
-    text-align: center;
+  padding: 20px 0;
 }
 
 section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-/* Additional styles for other sections can be added here */
+section h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 
+section p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Form styles */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.edu_h2{
+    color: black;
+}
+.Education_cont {
+  width: 80%;
+  margin: auto;
+  height: 90vh;
+}
+
+#Education h1 {
+  margin: 2rem;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin: auto;
+}
+
+.edu_cont {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 3rem;
+  height: 30vh;
+}
+.edu_name {
+  color: black;
+  font-weight: bold;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d64ac;
+  border-radius: 5px;
+}
+.edu_name h1 {
+  color: black;
+}
+.edu-name p {
+  font-size: medium;
+}
+
+.edu_desc {
+    height: 248px;
+  color: rgb(205, 200, 200);
+  margin-left: 1rem;
+  padding: 28px;
+  background-color: #c2bfbf2d;
+  border-radius: 5px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edu_desc p {
+  font-size: 15px;
+}
+
+/* Responsive styles */
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Adjust header padding */
+  header {
+    padding: 50px 0;
+  }
+
+  /* Decrease profile picture size */
+  .pfp {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Decrease font sizes for header */
+  header h1,
+  header h2 {
+    font-size: 24px;
+  }
+
+  /* Decrease font size for navigation */
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  /* Adjust margin between navigation items */
+  nav ul li {
+    margin-right: 5px;
+  }
+
+  /* Decrease font size for section headings */
+  section h2 {
+    font-size: 20px;
+  }
+
+  /* Decrease font size for section paragraphs */
+  section p {
+    font-size: 14px;
+  }
+
+  /* Adjust padding for form */
+  form {
+    padding: 10px;
+  }
+
+  /* Adjust padding for form inputs */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form textarea {
+    padding: 8px;
+  }
+
+  /* Adjust padding for form submit button */
+  form input[type="submit"] {
+    padding: 8px 16px;
+  }
+}

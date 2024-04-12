@@ -12,17 +12,23 @@
 
     <header>
         <div class="container">
-            <img src="./assets/pfp.jpeg" alt="Profile Picture">
+            <img class="pfp" src="./assets/pfp.jpeg" alt="Profile Picture">
             <h1>Krish Patel</h1>
             <h2>Web Developer</h2>
             <nav>
                 <ul>
-                    <button>
-                        <li><a href="resume.pdf" download>Resume</a></li>
-                    </button>
-                    <button>
-                        <li><a href="#contact">Contact Me</a></li>
-                    </button>
+                    <li>
+                        <button class="resume">
+                            <img src="./assets/downloads.png" alt="download icon">
+                            <a class="black" href="resume.pdf" download>Resume</a>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <img src="./assets/contact.png" alt="Contact img">
+                            <a class="black" href="#contact">Contact Me</a>
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -48,11 +54,30 @@
             </div>
         </section>
 
-        <section id="education">
-            <div class="container">
-                <h2>Education</h2>
-                <p>Bachelor of Computer Science - Seneca College</p>
-                <p>Graduation Date: May 2023</p>
+        <section id="Education">
+            <div class="Education_cont">
+                <h1 data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">Education</h1>
+                <div class="edu_cont" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
+                    <div class="edu_name teensopx">
+                        <h2 class="edu_h2">Seneca College </h2>
+                        <p class="edu_h2">(2023-2025)</p>
+                    </div>
+                    <div class="edu_desc teensopx">
+                        <p>
+                            Since starting at Seneca College in fall 2023, I've embarked on an enriching journey of learning and personal development. The diverse range of experiences, from acquiring new programming skills to interacting with people from various cultural backgrounds, has undoubtedly enhanced my abilities as a programmer and broadened my perspective on the world.</p>
+                    </div>
+                </div>
+                <div class="edu_cont" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
+                    <div class="edu_name teensopx">
+
+                        <h2 class="edu_h2">Gujarat University</h2>
+                        <p class="edu_h2">2022 - Graduated</p>
+                    </div>
+                    <div class="edu_desc teensopx">
+                        <p>
+                            Attending Gujarat University for my diploma in Computer Engineering marked a crucial juncture in my life. Despite already enjoying coding, my time at the university intensified my passion for it, solidifying my commitment to the field. </p>
+                    </div>
+                </div>
             </div>
         </section>
 
