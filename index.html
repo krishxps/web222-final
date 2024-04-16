@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -36,53 +37,53 @@
 
     <main>
         <div class="sections-container">
-        <section class="honesty">
-            <h2 id="about-me">Honesty</h2>
-            I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
-            No part of this assessment has been copied manually or electronically from any other source
-            (including web sites) except for the information supplied by the WEB222 instructors and / or
-            made available in this assessment for my use. I also declare that no part of this assignment has
-            been distributed to other students.
-        </section>
-        <section id="infographic">
-            <div class="container">
-                <h2 id="about-me">About Me</h2>
-                <p>Age: 20</p>
-                <p>Email: kspatel46@myseneca.ca</p>
-                <p>Language: English, Hindi, Gujarati, Spanish</p>
-                <p>Class Section: ZCC</p>
-                <p>Student ID: 106198237</p>
-                <p>Professor: Mark Meritt </p>
-            </div>
-        </section>
+            <section class="honesty">
+                <h2 id="about-me">Honesty</h2>
+                I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+                No part of this assessment has been copied manually or electronically from any other source
+                (including web sites) except for the information supplied by the WEB222 instructors and / or
+                made available in this assessment for my use. I also declare that no part of this assignment has
+                been distributed to other students.
+            </section>
+            <section id="infographic">
+                <div class="container">
+                    <h2 id="about-me">About Me</h2>
+                    <p>Age: 20</p>
+                    <p>Email: kspatel46@myseneca.ca</p>
+                    <p>Language: English, Hindi, Gujarati, Spanish</p>
+                    <p>Class Section: ZCC</p>
+                    <p>Student ID: 106198237</p>
+                    <p>Professor: Mark Meritt </p>
+                </div>
+            </section>
         </div>
-        <section id="Education">
-            <div class="Education_cont">
-                <h1 data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">Education</h1>
-                <div class="edu_cont" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
-                    <div class="edu_name teensopx">
-                        <h2 class="edu_h2">Seneca College </h2>
-                        <p class="edu_h2">(2023-2025)</p>
-                    </div>
-                    <div class="edu_desc teensopx">
-                        <p>
-                            Since starting at Seneca College in fall 2023, I've embarked on an enriching journey of learning and personal development. The diverse range of experiences, from acquiring new programming skills to interacting with people from various cultural backgrounds, has undoubtedly enhanced my abilities as a programmer and broadened my perspective on the world.</p>
-                    </div>
-                </div>
-                <div class="edu_cont" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
-                    <div class="edu_name teensopx">
 
-                        <h2 class="edu_h2">Gujarat University</h2>
-                        <p class="edu_h2">2022 - Graduated</p>
-                    </div>
-                    <div class="edu_desc teensopx">
-                        <p>
-                            Attending Gujarat University for my diploma in Computer Engineering marked a crucial juncture in my life. Despite already enjoying coding, my time at the university intensified my passion for it, solidifying my commitment to the field. </p>
-                    </div>
+        <section id="education">
+            <div class="container">
+                <h2 class="section-heading"><strong style="font-size: 35px;">Educational Background</strong></h2>
+                <div class="education-info" id="education-info">
+                    <!-- Education items will be dynamically added here -->
                 </div>
             </div>
         </section>
+        <!-- Inside <main> element -->
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-heading">Skills</h2>
+                <ul class="skills-list">
+                </ul>
+            </div>
+        </section>
 
+        <section id="portfolio">
+            <div class="container">
+              <h2 class="section-heading"><strong style="font-size: 35px;">Portfolio</strong></h2>
+              <div class="project-container" id="project-container">
+                <!-- Project items will be dynamically added here -->
+              </div>
+            </div>
+          </section>
+        
         <section id="contact">
             <div class="container">
                 <h2>Contact Me</h2>
@@ -131,7 +132,15 @@
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2024 <a href="https://krishxps-portfolio.vercel.app/">Krish Patel.</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
