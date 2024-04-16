@@ -1,4 +1,13 @@
 // APIS
+const aboutMeInfo = [
+    { label: "Age:", value: "20" },
+    { label: "Email:", value: "kspatel46@myseneca.ca" },
+    { label: "Language:", value: "English, Hindi, Gujarati, Spanish" },
+    { label: "Class Section:", value: "ZCC" },
+    { label: "Student ID:", value: "106198237" },
+    { label: "Professor:", value: "Mark Meritt" }
+];
+
 const educationData = [
     {
         institution: "Seneca College",
@@ -23,24 +32,25 @@ const skillsData = [
 
 const projectData = [
     {
-      title: "Portfolio Website",
-      image: "./assets/profolioweb.png",
-      description: "I am developing Portfolio Website for myself with help of knowledge of web222. I wanted to submit that website but because of exams I will be not able to make that website in time.",
-      link: "https://krishxps-portfolio.vercel.app/"
+        title: "Portfolio Website",
+        image: "./assets/profolioweb.png",
+        description: "I am developing Portfolio Website for myself with help of knowledge of web222. I wanted to submit that website but because of exams I will be not able to make that website in time.",
+        link: "https://krishxps-portfolio.vercel.app/"
     },
     {
-      title: "TinDog",
-      image: "/assets/tindog.png",
-      description: "Tindog (I did this with help of YouTube Tutorial): the ultimate dating app for dogs! Connect with furry friends nearby for tail-wagging adventures. Join now and sniff out your perfect match!",
-      link: "https://krishxps.github.io/TinDog/"
+        title: "TinDog",
+        image: "/assets/tindog.png",
+        description: "Tindog (I did this with help of YouTube Tutorial): the ultimate dating app for dogs! Connect with furry friends nearby for tail-wagging adventures. Join now and sniff out your perfect match!",
+        link: "https://krishxps.github.io/TinDog/"
     },
     {
-      title: "Project 3",
-      image: "project3.jpg",
-      description: "Description of Project 3.",
-      link: "#"
+        title: "More Project Soon...",
+        image: "https://media.istockphoto.com/id/1302168946/vector/coming-soon-red-ribbon-label-banner-open-available-now-sign-or-coming-soon-tag-vector.jpg?s=612x612&w=0&k=20&c=uzI1Ztsm3NcyQCscb1kQ3goarshfkR_n2ZDhAwgYPWQ=",
+        description: "Exciting new projects are on the horizon! Stay tuned for more innovative creations coming your way soon. Keep an eye out for updates and be the first to explore these upcoming endeavors.",
+        link: "#"
     }
-  ];
+];
+
 document.addEventListener('DOMContentLoaded', function () {
     const hiringRadio = document.getElementById('hiring');
     const hourlyRate = document.getElementById('hourly_rate');
@@ -108,7 +118,6 @@ function createSkillsList() {
 }
 
 
-// Function to create project items
 function createProjectItems() {
     const projectContainer = document.getElementById("project-container");
 
@@ -138,7 +147,26 @@ function createProjectItems() {
         projectContainer.appendChild(projectItem);
     });
 }
+function generateHonestySection() {
+    const honestySection = document.querySelector('.honesty');
+    const honestyParagraph = document.createElement('p');
+    honestyParagraph.textContent = "I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.";
+    honestySection.appendChild(honestyParagraph);
+}
 
+function generateAboutMeSection() {
+    const aboutMeSection = document.querySelector('#infographic .container');
+    aboutMeInfo.forEach(item => {
+        const paragraph = document.createElement('p');
+        paragraph.textContent = `${item.label} ${item.value}`;
+        aboutMeSection.appendChild(paragraph);
+    });
+}
+
+generateHonestySection();
+generateAboutMeSection();
 createEducationItems();
 createSkillsList();
 createProjectItems();
+
+

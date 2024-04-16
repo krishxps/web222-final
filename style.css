@@ -423,7 +423,8 @@ main {
 }
 
 footer {
-  background-color: #f8f9fa;
+  background-color: #3d64ac; 
+  color: #fff; 
   padding: 20px 0;
   text-align: center;
 }
@@ -435,12 +436,21 @@ footer {
 
 .footer-text {
   font-size: 14px;
-  color: #6c757d;
   margin: 0;
   padding: 0;
 }
 
+.footer-text a {
+  color: #fff; 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-text a:hover {
+  color: #ffc107; 
+}
+
 .footer-text img {
-  width: 20px; /* Adjust the width of the social media icons as needed */
-  margin-left: 5px; /* Adjust the spacing between the text and icons as needed */
+  width: 20px;
+  margin-left: 5px;
 }
